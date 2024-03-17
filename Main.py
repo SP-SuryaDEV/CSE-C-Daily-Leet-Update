@@ -34,7 +34,7 @@ def fetch_data():
   curr_count = []
 
   for username in usernames:
-    total = Leetcode(username)
+    total = Leetcode(username)[0]
     curr_count.append(total)
 
   return conn, data, pd.Series(curr_count)
