@@ -68,7 +68,7 @@ def Leetcode(username):
         else:
             return {}, False
 
-        return {'Username' : username , 'Total' : total}, True
+        return total, True
 
     
     elif response == 404:
