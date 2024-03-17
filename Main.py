@@ -22,7 +22,7 @@ def get_data():
   
   conn = st.experimental_connection('gsheets', type=GSheetsConnection)
   
-  data = conn.read(worksheet='II', usecols=list(range(COLUMNS)), ttl=60)
+  data = conn.read(worksheet='II', usecols=list(range(COLUMNS)), ttl=10)
   data.dropna(how='all', inplace=True)
 
   return conn, data
