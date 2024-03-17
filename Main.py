@@ -44,7 +44,7 @@ def merge_data():
 
   date = Date().strip()
 
-  if date in not existing_data.columns:
+  if date not in existing_data.columns:
     set_columns(len(existing_data.columns) + 1)
 
   existing_data[date] = curr_count
