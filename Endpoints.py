@@ -2,7 +2,6 @@ import backoff
 import streamlit as st
 import requests
 import os
-from bs4 import BeautifulSoup as bs
 from datetime import datetime, timedelta
 
 class ForbiddenError(Exception):
