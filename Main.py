@@ -15,7 +15,7 @@ def get_columns():
 
 def set_columns(col):
   with open('cols.txt', 'w') as file:
-    file.write(col)
+    file.write(str(col).strip())
 
 def get_data():
   COLUMNS = get_columns()
